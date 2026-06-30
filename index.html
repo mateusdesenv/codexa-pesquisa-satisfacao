@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codexa | Pesquisa de satisfação</title>
+    <meta
+      name="description"
+      content="Pesquisa de satisfação da Codexa para clientes avaliarem atendimento, processo, resultado e experiência geral."
+    />
+    <meta name="theme-color" content="#25BF44" />
+    <meta property="og:title" content="Codexa | Pesquisa de satisfação" />
+    <meta
+      property="og:description"
+      content="Ajude a Codexa a melhorar a experiência de atendimento e entrega dos projetos."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero-panel" aria-labelledby="page-title">
+        <div class="ambient ambient-one" aria-hidden="true"></div>
+        <div class="ambient ambient-two" aria-hidden="true"></div>
+
+        <header class="brand-header">
+          <a class="logo-link" href="https://www.codexa-web.online/" target="_blank" rel="noopener noreferrer" aria-label="Abrir site da Codexa">
+            <img src="./assets/codexa-logo-reversed.png" alt="Codexa" class="brand-logo" />
+          </a>
+          <span class="eyebrow">Pesquisa de satisfação</span>
+          <h1 id="page-title">Como foi sua experiência com a Codexa?</h1>
+          <p>
+            Suas respostas ajudam a melhorar atendimento, comunicação, processo e qualidade das próximas entregas.
+          </p>
+        </header>
+
+        <div class="hero-metrics" aria-label="Resumo do formulário">
+          <article>
+            <strong>2 min</strong>
+            <span>tempo médio</span>
+          </article>
+          <article>
+            <strong>9</strong>
+            <span>perguntas objetivas</span>
+          </article>
+          <article>
+            <strong>WhatsApp</strong>
+            <span>envio direto</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="form-card" aria-label="Formulário de satisfação">
+        <div class="form-topline">
+          <img src="./assets/codexa-icon.png" alt="" aria-hidden="true" />
+          <div>
+            <strong>Avaliação do cliente</strong>
+            <span>Preencha com sinceridade. Não precisa escrever muito.</span>
+          </div>
+        </div>
+
+        <form id="satisfaction-form" novalidate>
+          <div class="field-grid two-cols">
+            <label class="field">
+              <span>Seu nome *</span>
+              <input type="text" name="clientName" autocomplete="name" placeholder="Ex: João Silva" required />
+              <small class="error-message">Informe seu nome.</small>
+            </label>
+
+            <label class="field">
+              <span>Empresa / projeto</span>
+              <input type="text" name="company" placeholder="Ex: Los Perros Market" />
+            </label>
+          </div>
+
+          <div class="question-block nps-block" data-required-group="nps" role="group" aria-labelledby="nps-title">
+            <div class="question-title" id="nps-title">
+              <span>De 0 a 10, quanto você indicaria a Codexa?</span>
+              <small>0 = não indicaria · 10 = indicaria com certeza</small>
+            </div>
+            <div class="nps-options" role="radiogroup" aria-label="Nota de indicação">
+              <label><input type="radio" name="nps" value="0" required /><span>0</span></label>
+              <label><input type="radio" name="nps" value="1" /><span>1</span></label>
+              <label><input type="radio" name="nps" value="2" /><span>2</span></label>
+              <label><input type="radio" name="nps" value="3" /><span>3</span></label>
+              <label><input type="radio" name="nps" value="4" /><span>4</span></label>
+              <label><input type="radio" name="nps" value="5" /><span>5</span></label>
+              <label><input type="radio" name="nps" value="6" /><span>6</span></label>
+              <label><input type="radio" name="nps" value="7" /><span>7</span></label>
+              <label><input type="radio" name="nps" value="8" /><span>8</span></label>
+              <label><input type="radio" name="nps" value="9" /><span>9</span></label>
+              <label><input type="radio" name="nps" value="10" /><span>10</span></label>
+            </div>
+            <small class="error-message">Selecione uma nota de 0 a 10.</small>
+          </div>
+
+          <div class="rating-grid">
+            <div class="question-block scale-question" data-required-group="attendance" role="group" aria-labelledby="attendance-title">
+              <div class="question-title" id="attendance-title">Como você avalia o atendimento?</div>
+              <div class="scale-options" role="radiogroup" aria-label="Atendimento">
+                <label><input type="radio" name="attendance" value="Ruim" required /><span>Ruim</span></label>
+                <label><input type="radio" name="attendance" value="Regular" /><span>Regular</span></label>
+                <label><input type="radio" name="attendance" value="Bom" /><span>Bom</span></label>
+                <label><input type="radio" name="attendance" value="Excelente" /><span>Excelente</span></label>
+              </div>
+              <small class="error-message">Selecione uma opção.</small>
+            </div>
+
+            <div class="question-block scale-question" data-required-group="communication" role="group" aria-labelledby="communication-title">
+              <div class="question-title" id="communication-title">A comunicação foi clara durante o projeto?</div>
+              <div class="scale-options" role="radiogroup" aria-label="Comunicação">
+                <label><input type="radio" name="communication" value="Não" required /><span>Não</span></label>
+                <label><input type="radio" name="communication" value="Mais ou menos" /><span>Mais ou menos</span></label>
+                <label><input type="radio" name="communication" value="Sim" /><span>Sim</span></label>
+                <label><input type="radio" name="communication" value="Muito clara" /><span>Muito clara</span></label>
+              </div>
+              <small class="error-message">Selecione uma opção.</small>
+            </div>
+
+            <div class="question-block scale-question" data-required-group="deadline" role="group" aria-labelledby="deadline-title">
+              <div class="question-title" id="deadline-title">Como você avalia prazo e organização?</div>
+              <div class="scale-options" role="radiogroup" aria-label="Prazo e organização">
+                <label><input type="radio" name="deadline" value="Ruim" required /><span>Ruim</span></label>
+                <label><input type="radio" name="deadline" value="Regular" /><span>Regular</span></label>
+                <label><input type="radio" name="deadline" value="Bom" /><span>Bom</span></label>
+                <label><input type="radio" name="deadline" value="Excelente" /><span>Excelente</span></label>
+              </div>
+              <small class="error-message">Selecione uma opção.</small>
+            </div>
+
+            <div class="question-block scale-question" data-required-group="result" role="group" aria-labelledby="result-title">
+              <div class="question-title" id="result-title">O resultado final atendeu sua expectativa?</div>
+              <div class="scale-options" role="radiogroup" aria-label="Resultado final">
+                <label><input type="radio" name="result" value="Não" required /><span>Não</span></label>
+                <label><input type="radio" name="result" value="Parcialmente" /><span>Parcialmente</span></label>
+                <label><input type="radio" name="result" value="Sim" /><span>Sim</span></label>
+                <label><input type="radio" name="result" value="Superou" /><span>Superou</span></label>
+              </div>
+              <small class="error-message">Selecione uma opção.</small>
+            </div>
+          </div>
+
+          <label class="field textarea-field">
+            <span>O que você mais gostou na experiência?</span>
+            <textarea name="liked" rows="4" placeholder="Ex: atendimento rápido, visual do site, facilidade de usar, clareza nas explicações..."></textarea>
+          </label>
+
+          <label class="field textarea-field">
+            <span>O que podemos melhorar?</span>
+            <textarea name="improvement" rows="4" placeholder="Pode ser sobre atendimento, prazo, processo, comunicação, detalhes do site ou suporte."></textarea>
+          </label>
+
+          <div class="question-block compact-question" data-required-group="testimonialPermission" role="group" aria-labelledby="testimonial-title">
+            <div class="question-title" id="testimonial-title">Podemos usar seu feedback como depoimento?</div>
+            <div class="inline-options" role="radiogroup" aria-label="Autorização para depoimento">
+              <label><input type="radio" name="testimonialPermission" value="Sim, pode usar meu feedback" required /><span>Sim</span></label>
+              <label><input type="radio" name="testimonialPermission" value="Pode usar sem meu nome/empresa" /><span>Sim, sem identificação</span></label>
+              <label><input type="radio" name="testimonialPermission" value="Não autorizo" /><span>Não</span></label>
+            </div>
+            <small class="error-message">Selecione uma opção.</small>
+          </div>
+
+          <label class="field textarea-field">
+            <span>Comentário final</span>
+            <textarea name="finalComment" rows="4" placeholder="Alguma observação extra ou mensagem que você queira deixar para a Codexa?"></textarea>
+          </label>
+
+          <div class="privacy-note">
+            <strong>Importante:</strong>
+            ao enviar, o WhatsApp será aberto com as respostas preenchidas. Basta revisar e tocar em enviar.
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="primary-action">Enviar avaliação pelo WhatsApp</button>
+            <button type="button" class="secondary-action" id="copy-response">Copiar respostas</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
